@@ -53,6 +53,7 @@ class ListaCervejas extends Component {
         return (
             <ScrollView>
                 {this.renderCervejas()}
+                <Button onPress={() => { this.carregaLista() }}>Recarregar</Button>
             </ScrollView>
         );
     }
