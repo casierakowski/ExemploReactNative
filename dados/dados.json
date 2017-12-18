@@ -3,24 +3,24 @@
       "id": 1,
       "nome": "Indica", 
       "estilo": "IPA",
-      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/indica.jpg"
+      "imagem":"https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/indica.jpg"
    },
    {
       "id": 2,
       "nome": "Appia", 
       "estilo": "Weiss + Mel",
-      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/appia1.jpg"
+      "imagem": "https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/appia1.jpg"
    },
    {
       "id": 3,
       "nome": "Vixnu", 
       "estilo": "Imperial IPA",
-      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/vixnu.jpg"
+      "imagem":"https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/vixnu1.jpg"
    },
    {
       "id": 4,
       "nome": "Demoiselle", 
       "estilo": "Porter",
-      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/demo.jpg"
+      "imagem":"https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/demo.jpg"
    }
 ]
