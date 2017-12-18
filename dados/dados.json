@@ -1,0 +1,26 @@
+[
+   {
+      "id": 1,
+      "nome": "Indica", 
+      "estilo": "IPA",
+      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/indica.jpg"
+   },
+   {
+      "id": 2,
+      "nome": "Appia", 
+      "estilo": "Weiss + Mel",
+      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/appia1.jpg"
+   },
+   {
+      "id": 3,
+      "nome": "Vixnu", 
+      "estilo": "Imperial IPA",
+      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/vixnu.jpg"
+   },
+   {
+      "id": 1,
+      "nome": "Demoiselle", 
+      "estilo": "Porter",
+      "imagem":"https://github.com/casierakowski/ExemploReactNative/blob/master/imagens/demo.jpg"
+   }
+]
