@@ -9,7 +9,7 @@ const Produto = (props) => {
     const { imagemStyle, estiloTexto, estiloView } = estilos;
     //console.log("imagemURI: ", imagemURI);
     return (
-        <View style={estiloView} key={id}>
+        <View style={estiloView}>
             <Text style={estiloTexto}>{id} - {nome} - {estilo}</Text>
             <Image style={imagemStyle} source={{ uri: imagemURI }} />
         </View>
@@ -19,7 +19,8 @@ const Produto = (props) => {
 const estilos = {
     estiloView: {
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: 10
     },
     estiloTexto: {
         backgroundColor: '#FFFF00',

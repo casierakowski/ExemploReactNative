@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import { View, Text, Image, ScrollView } from 'react-native';
+import { View, Text, Image, ScrollView, ToastAndroid } from 'react-native';
 import Button from './button';
 import Produto from './produto';
+import Titulo from './titulo';
 
 class ListaCervejas extends Component {
 
     state = { lista: [{ id: 0, nome: 'Carregando...' }] };
-
-    //urlDaApi = 'https://raw.githubusercontent.com/munifgebara/reactnative/master/lista/lista.json';
     urlDaApi = 'https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/dados/dados.json';
 
     componentWillMount() {
@@ -38,12 +37,12 @@ class ListaCervejas extends Component {
     }
 
     renderCervejas() {
-        const { containerStyle } = estilos;
+        
         return this.state.lista.map(
             cerveja =>
-                <View style={containerStyle} key={cerveja.id}>
+                <View  key={cerveja.id}  >
                     <Produto id={cerveja.id} nome={cerveja.nome} estilo={cerveja.estilo} imagemURI={cerveja.imagem} />
-                    <Button onPress={() => { this.remove(cerveja); }}>Remover</Button>
+                    <Button onPress={() => { this.remove(cerveja); }}>Remover ({cerveja.nome})</Button>
                 </View>
         );
     }
@@ -52,18 +51,23 @@ class ListaCervejas extends Component {
         console.log('Lista.Render');
         return (
             <ScrollView>
-                {this.renderCervejas()}
+                <Titulo texto={'Lista de Cervejas'} />
                 <Button onPress={() => { this.carregaLista() }}>Recarregar</Button>
+                {this.renderCervejas()}
+                <Button onPress={() => { this.exibeMensagem() }}>Mensagem</Button>
             </ScrollView>
+        );
+    }
+
+    exibeMensagem() {
+        ToastAndroid.showWithGravity(
+            'Nasdrovie! Saúde!',
+            ToastAndroid.LONG,
+            ToastAndroid.CENTER
         );
     }
 }
 
-const estilos = {
-    containerStyle: {
-        alignItems: 'center',
-        flexDirection: 'column'
-    }
-};
+
 
 export default ListaCervejas;
