@@ -22,5 +22,11 @@
       "nome": "Demoiselle", 
       "estilo": "Porter",
       "imagem":"https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/demo.jpg"
+   },
+   {
+      "id": 5,
+      "nome": "Cauim", 
+      "estilo": "Pilsen",
+      "imagem":"https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/cauim.jpg"
    }
 ]
