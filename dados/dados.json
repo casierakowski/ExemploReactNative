@@ -28,5 +28,11 @@
       "nome": "Cauim", 
       "estilo": "Pilsen",
       "imagem":"https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/cauim.jpg"
+   },
+   {
+      "id": 6,
+      "nome": "Ithaca", 
+      "estilo": "Imperial Stout",
+      "imagem":"https://raw.githubusercontent.com/casierakowski/ExemploReactNative/master/imagens/ithaca.jpg"
    }
 ]
